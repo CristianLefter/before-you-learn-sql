@@ -1,0 +1,129 @@
+/* SQL Syntax Highlighting Theme */
+pre code.language-sql {
+  color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1em;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  line-height: 1.5;
+}
+
+/* Keywords */
+.sql-keyword {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+/* Functions */
+.sql-function {
+  color: #008080;
+}
+
+/* Strings */
+.sql-string {
+  color: #a31515;
+}
+
+/* Numbers */
+.sql-number {
+  color: #09885a;
+}
+
+/* Comments */
+.sql-comment {
+  color: #008000;
+  font-style: italic;
+}
+
+/* Operators */
+.sql-operator {
+  color: #666666;
+}
+
+/* Identifiers */
+.sql-identifier {
+  color: #333333;
+}
+
+/* Table structure */
+.sql-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.sql-table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.sql-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Relationship diagrams */
+.sql-diagram {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Data flow arrows */
+.sql-arrow {
+  color: #666;
+  font-weight: bold;
+  margin: 0 5px;
+}
+
+/* Callout boxes */
+.sql-tip, .sql-warning, .sql-note {
+  padding: 15px;
+  margin: 15px 0;
+  border-left: 5px solid;
+  background-color: #f8f8f8;
+}
+
+.sql-tip {
+  border-left-color: #5cb85c;
+}
+
+.sql-warning {
+  border-left-color: #f0ad4e;
+}
+
+.sql-note {
+  border-left-color: #5bc0de;
+}
+
+/* Code result display */
+.sql-result {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+}
+
+/* Print styles */
+@media print {
+  pre code.language-sql {
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+  
+  .sql-table {
+    page-break-inside: avoid;
+  }
+  
+  .sql-diagram {
+    page-break-inside: avoid;
+  }
+}
